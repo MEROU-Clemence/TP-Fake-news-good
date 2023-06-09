@@ -1,0 +1,599 @@
+:roots {
+    --fond-clair:#FFFFFF;
+    --fond-gris:#F0F0F0;
+    --fond-sombre:#444444;
+    --orange:#ED786A;
+    --orange-hover:#FD887A;
+    --rouge:#CC0000;
+    --gris-leger:#E5E5E5;
+    --blanc:#FFFFFF;
+    --gris-clair:#888888;
+    --gris-moyen:#777777;
+    --gris:#666666;
+    --gris-sombre:#3C3C3C;
+}
+
+/* Tout */
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* VERSION MOBILE 0-767px*/
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#FFFFFF;
+    color:#666666;
+    font-family: 'source sans pro', 'sans-serif';
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    letter-spacing: 2px;
+}
+
+h2, h3 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+button {
+    background-color: #ED786A;
+    border: solid;
+    border-color: #E5E5E5;
+    border-radius: 5px;
+    border-width: 2px;
+    color:#F0F0F0;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 30px 0 10px 0;
+    padding: 10px 48px;
+}
+
+button:hover {
+    background-color: #FD887A;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    border: solid;
+    border-width: 7px;
+    border-color: #E5E5E5;
+
+}
+
+a {
+    color: #666666;
+}
+
+a:hover {
+    color: #ED786A;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+/* Header */
+
+/* Nav */ 
+.nav {  
+    display: flex;
+    flex-direction: column;
+    justify-content:left;
+    position: absolute;
+    text-decoration: none;
+}
+
+.button-nav {
+    display: flex;
+}
+
+.nav button {
+    background-color: #E5E5E5;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color:#E5E5E5;
+    margin: 2px;
+    padding: 0;
+}
+
+.nav button a {
+    color: #666666;
+}
+
+.nav i {
+    padding: 5px 0 5px 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.grosse-nav i {
+    color: #666666;
+    display: none;
+}
+
+.grosse-nav li {
+    border: solid;
+    border-color: #3C3C3C;
+    border-width: 1px;
+}
+
+.nav ul {
+    background-color: #444444;  
+    color: #E5E5E5;
+    text-align: start;
+}
+
+.nav li {
+    padding: 6px 55px 6px 10px;
+}
+
+.nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-plus-fine-1 li {
+    padding-left: 15px;
+}
+
+.nav-plus-fine-2 li {
+    padding-left: 30px;
+}
+
+.nav-plus-fine-1 a, .nav-plus-fine-2 a {
+    color:#E5E5E5;
+    font-size: 13px;
+    font-weight: inherit;
+    text-transform: uppercase;
+}
+
+.principal-li a:hover, .principal-li i:hover{
+    /* TODO: reussir faire ensemble la couleur dans les deux sens ? class="principal-li" qui se reconnait ? */
+    color: #ED786A;
+}
+
+#falsification-nav a:hover {
+    color: #ED786A;
+}
+
+
+/* Suite Header */
+h1 {
+    color: #ED786A;
+    font-family: 'Arvo', cursive;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-top: 70px;
+    text-shadow: 2px 2px 2px #E5E5E5;
+}
+
+.container {
+    display: inline-block;
+    padding: 10px 10px;
+}
+
+.container p {
+    padding: 10px 25px;
+}
+
+.fake-news {
+    padding: 0 30px;
+}
+.fake-news p {
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin: 0px 0px 50px 0px;
+}
+
+.last-fake-news {
+    padding: 30px;
+}
+
+/* Aside */
+aside {
+    margin-bottom: 40px;
+}
+
+aside p {
+    background-image: url("img/banner-de-citation.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#E5E5E5;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+    padding: 65px 30px;
+    text-align: center;
+}
+
+.italik {
+    font-style: italic;
+}
+
+/* Main */
+main {
+    margin: 0px 30px 20px 30px;
+}
+
+.gros-du-main {
+    padding: 20px 0px;
+}
+
+.articles {
+    /* Ce sont les paragraphes bien alignés sous les photos */
+    text-align: justify;
+}
+
+.dubble-hr {
+    margin: 30px 0;
+}
+
+.float {
+    /* Les textes flottants */
+    float: left;
+    margin: 0px 15px 20px 0px;
+}
+
+.dates-offres-plantes, .dates, .offres-plantes{
+    padding: 0px;
+}
+
+.dates-offres-plantes h3 {
+    margin: 30px;
+}
+
+.dates-offres-plantes div {
+    margin: 30px 0px;
+}
+
+.date {
+    background-color: #666666;
+    border-radius: 5px;
+    color:#F0F0F0;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 6px 14px;
+    box-shadow: 2px 2px 2px #E5E5E5;
+}
+    
+/* Footer */
+footer {
+    background-color: #F0F0F0;
+    box-shadow: inset 2px 2px #E5E5E5;
+    padding: 30px;
+    width: 100%;
+}
+
+footer h2 {
+    margin: 60px 60px 10px 60px;
+}
+
+.button-final {
+    margin: 8px;
+    width: 100%;
+}
+
+.block-form {
+    border: solid;
+    border-color: #E5E5E5;
+    border-radius: 5px;
+    border-width: 2px;
+    margin: 8px;
+    padding: 8px;
+    width: 100%;
+}
+
+footer section p, footer section li {
+    padding: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+footer p {
+    text-align: justify;
+}
+
+footer ul {
+    list-style-type:none;
+}
+
+.infos ul div li{
+    text-align: left;
+}
+
+
+footer li { 
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+
+}
+
+i {
+    margin-right: 10px;
+}
+
+.end {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.error {
+    display: none;
+    color: #CC0000;
+    font-size: 12px;
+    text-align: start;
+    padding: 8px;
+}
+
+.block-with-error {
+   display: flex;
+   flex-direction: column;
+}
+
+/* Page validation ok du formulaire */
+
+.black-body {
+    display: flex;
+    background-color: black;
+    align-items: center;
+}
+
+.div-du-black-body {
+    background-color: white;
+    border: solid;
+    border-color: #F0F0F0;
+    border-width: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
+    padding: 20px;
+    text-align: start;
+}
+
+.div-du-black-body button {
+    color: #F0F0F0;
+}
+
+/* ------- Responsive ------- */
+/* --- de 0 à 767 px */
+/* Au dessus comme ça */
+
+
+/* --- de 768 à 991 px --- */
+@media (min-width: 768px)  {
+
+/* Global */
+    h3 {
+        font-size: 16px;
+    }
+
+/* Header */
+    .container {
+        margin: 10px;
+        display: inline-block;
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+    .container p {
+        padding: 10px 20px;
+    }
+
+    .triple-containers {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+/* Aside */
+    aside p {
+        padding: 100px 70px;
+    }
+
+/* Main */
+    main {
+        display: flex;
+        float: right;
+        margin: 20px 50px;
+        text-align: left;
+    }
+
+    .big-gros-main {
+        padding: 20px 30px 0px 0px;
+        width: 100%;
+    }
+
+    .big-gros-main h2 {
+        margin: 0px 0px 40px;
+        text-align: left;
+    }
+
+    .dates-offres-plantes {
+        margin: 0px;
+        padding: 0px;
+        width: 50%;
+    }
+
+    .dates-offres-plantes h3 {
+        margin: 30px 0px 20px;
+        text-align: left;
+    }
+
+    .button-right {
+        padding: 10px 20px;
+    }
+
+/* Footer  */
+    footer h2 {
+        padding-bottom: 20px;
+    }
+
+    footer form {
+        padding: 0px 10px 0 20px;
+    }
+
+    .block-form {
+        width: auto;
+    }
+    
+    .button-final {
+        width: 70%;
+        margin: 8px;
+    }
+    
+    .infos {
+        padding: 0px 10px;
+    }
+
+    .infos ul div li{
+        text-align: left;
+    }
+
+    .france-info {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0 20px;
+    }
+
+    .france-info-inside-form {
+        display: flex;
+    }
+
+    .infos ul {
+        display: flex;
+    }
+}
+
+/* --- de 992 à l'infini de l'au delà --- */
+@media (min-width: 992px) {
+
+/* Global */
+
+/* Header */
+
+    /* Navigation */
+
+    .nav {
+        justify-content: space-around;
+        position: relative;
+        align-items: center;
+    }
+
+    .button-nav {
+        display: none;
+    } 
+
+    .hidden {
+        display:block;
+    }
+    
+    .nav ul {
+        background-color: #FFFFFF;
+        display: flex;
+    }
+
+    .grosse-nav i {
+        display:inline;
+    }
+
+    .nav li {
+        background-color: #FFFFFF;
+        border: none;
+        list-style-type: none;
+    }
+    
+    .nav a {
+        color:#666666;
+        font-size: 12px;
+    }
+    
+    .nav-en-colonne-1 {
+        text-align: start;
+    }
+    
+    .nav-en-colonne-2 {
+        display: flex;
+    }
+
+    ul .nav-plus-fine-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  
+    .nav-plus-fine-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*TODO: style des bordures et affichage de ma nav horizontale !!!!!!!!! */
+
+    .nav-plus-fine-1 li, .nav-en-colonne-2 li {
+        border: solid;
+        border-color: #3C3C3C;
+        border-width: 1px;
+    }
+
+    .nav-plus-fine-1 a, .nav-plus-fine-2 a {
+        background-color: white;
+        color:#444444;
+        text-transform: none;
+    }
+
+    .nav-plus-fine-2 {
+        float: right;
+        align-items: flex-end;
+    }
+
+    .nav li.deroul-baboul {
+        width: 75%;
+    }
+
+    /* Grand header */
+    .triple-containers {
+        justify-content: space-between;
+    }
+
+/* Aside */
+    aside p {
+        padding: 180px;
+    }
+
+/* Main */
+    main {
+        margin: 20px 80px;
+    }
+
+/* Footer  */ 
+
+    .france-info-inside-form {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}

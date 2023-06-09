@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TP intégration Fake News</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav"> <!-- Menu déroulant -->
+            <button><i class="fa-solid fa-bars"></i></button>
+            
+            <select name="menu-deroulant" id="menu-deroulant">
+                <option value="bouton" selected><i class="fa-solid fa-bars"></i></option>
+                <optgroup label="REMBOBINER"></optgroup>
+                <optgroup label="TRUCS EN TOC">
+                    <option value="faux">FAUX</option>
+                    <option value="contre-verités">CONTRE-VÉRITÉS</option>
+                    <option value="erreurs">ERREURS</option>
+                    <optgroup label="FALSIFICATIONS">
+                        <option value="faux-liens">FAUX LIENS</option>
+                        <option value="fausses-tabulations">FAUSSES TABULATIONS</option>
+                        <option value="faux-titres">FAUX TITRES</option>
+                    </optgroup>
+                    <option value="non">NON</option>
+                </optgroup>
+                    <option value="rouage">ROUAGE</option>
+                <option value="boucle-infinie">BOUCLE INFINIE</option>
+                <option value="fausse-route">FAUSSE ROUTE</option>
+            </select>
+        </nav>
+ 
+        <section class="fake-news"> <!-- Fake news -->
+            <h1> FAKE NEWS </h1><br>
+
+            <p> CONTIENT DE L'AUTHENTIQUE HTML5 ET DE LA VÉRITABLE CSS3.</p>
+            
+            <hr noshade width=100% size="4" color="#E5E5E5">
+            <hr noshade width=100% size="4" color="#E5E5E5">
+            
+        </section>
+
+        <section class="last-fake-news"> <!-- Les dernières Fake news -->
+            <h2> LES DERNIÈRES <strong> FAKE NEWS</strong>! </h2>
+
+            <section class="triple-containers">
+                <div class="container"> <!-- Comment ranger un livre ?-->
+                    <picture class="gallery">
+                        <source media="(max-width: 767px)" srcset="img/livres-larg-368.jpg">
+                        <source media="(max-width: 991px)" srcset="img/livres-larg-175.jpg">
+                        <source media="(min-width: 992px)" srcset="img/livres-larg-250.jpg">
+            
+                        <img src="img/livres-larg-368.jpg" alt="Livres alignés">
+                    </picture>
+                    
+                    <h3> COMMENT RANGER UN LIVRE ? </h3>
+
+                    <p>
+                        On vous ment <strong>depuis le début</strong>, il faut ranger les livres sur la tranche, c'est meilleur pour la santé mentale.
+                        <br> Le témoignage exclusif de 
+                        <a href="#">Robert, dictionnaire de français.</a>
+                    </p>
+                </div>
+
+                <div class="container"> <!-- Huile de palmipède -->
+                    <picture class="gallery">
+                        <source media="(max-width: 767px)" srcset="img/tartine-nutella-larg-368.jpg">
+                        <source media="(max-width: 991px)" srcset="img/tartine-nutella-larg-175.jpg">
+                        <source media="(min-width: 992px)" srcset="img/tartine-nutella-larg-250.jpg">
+            
+                        <img src="img/tartine-nutella-larg-368.jpg" alt="tartine Nutella c'est pas bon pour toi">
+                    </picture>
+
+                    <h3> HUILE DE PALMIPÈDE </h3>
+
+                    <p>
+                        Des chercheurs ont découvert qu'à cause de l'huile de palme qu'elle contient, une consommation excessive de pâte à tarniner provoquerait une mutation du pied en pâte de canard. Les 
+                        <a href="#">photos exclusives ici !</a>.
+                    </p>
+                </div>
+
+                <div class="container"> <!-- Cérisier Alien -->
+                    <picture class="gallery">
+                        <source media="(max-width: 767px)" srcset="img/cerisier-larg-368.jpg">
+                        <source media="(max-width: 991px)" srcset="img/cerisier-larg-175.jpg">
+                        <source media="(min-width: 992px)" srcset="img/cerisier-larg-250.jpg">
+            
+                        <img src="img/cerisier-larg-368.jpg" alt="Cerisier alien">
+                    </picture>
+
+                    <h3> CERISIER ALIEN </h3>
+
+                    <p>
+                        <strong>EXCLUSIF !</strong> Les aliens sont parmi nous ! Ils se cachent dans les cerisiers déguisés en fleurs. L'interview exclusive de 
+                        <a href="#">Bob l'extraterrestre.</a>
+                    </p>
+                </div>
+            </section>
+
+            <button> 📄 J'EN VEUX ENCORE !</button>
+        </section>
+    </header>
+
+    <aside> <!-- Citation -->
+        <hr noshade width=100% size="4" color="#E5E5E5">
+        <p> "ON PEUT TROMPER UNE FOIS MILLE PERSONNES, MAIS ON NE PEUT PAS TROMPER MILLE FOIS UNE PERSONNE." <span class="italik">- ÉMILE</span>
+        </p>
+        <hr noshade width=100% size="4" color="#E5E5E5">
+    </aside>
+
+    <main>
+        <section class="big-gros-main">
+            <div> <!-- C'est encore un coup de la CIA -->
+                <h2> C'EST ENCORE UN COUP DE LA CIA ! </h2>
+
+                <picture class="gallery">
+                    <source media="(max-width: 767px)" srcset="img/faux-passeports-larg-368.jpg">
+                    <source media="(max-width: 991px)" srcset="img/faux-passeports-larg-450.jpg">
+                    <source media="(min-width: 992px)" srcset="img/faux-passeports-larg-450.jpg">
+        
+                    <img src="img/faux-passeports-larg-368.jpg" alt="passeports fake cia">
+                </picture>
+
+                <h3> DES FAUX PASSEPORTS POUR LES ALIENS </h3>
+
+                <p class="articles">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque neque earum delectus provident aliquam ex ducimus a amet ipsam atque nemo dignissimos accusamus, iste laborum eum adipisci, autem expedita.
+                    Alias libero, voluptas quam laboriosam sunt dolorem, aliquam omnis aut quidem animi deleniti porro amet veniam voluptatum tempore temporibus officia rem. Quibusdam reiciendis delectus architecto possimus ut blanditiis, vitae laborum. <strong>Curabitur Leo Nibh </strong> était un roi babylonien du Crétacé inférieur.
+                </p>
+
+                <button> 📄 JE VEUX TOUT SAVOIR </button>   
+            </div>
+        
+            <div class="dubble-hr">
+                <hr noshade width=100% size="4" color="#E5E5E5">
+                <hr noshade width=100% size="4" color="#E5E5E5">
+            </div>
+
+            <div> <!-- A moins que ce ne soit la SPA ? -->
+                <h2> A MOINS QUE CE NE SOIT LA SPA ? </h2>
+
+                <picture class="gallery">
+                    <source media="(max-width: 767px)" srcset="img/vinyle-larg-368.jpg">
+                    <source media="(max-width: 991px)" srcset="img/vinyle-larg-450.jpg">
+                    <source media="(min-width: 992px)" srcset="img/vinyle-larg-450.jpg">
+        
+                    <img src="img/vinyle-larg-368.jpg" alt="passeports fake cia">
+                </picture>
+
+                <h3> DES ALIENS DÉGUISÉS EN HAMSTER </h3>
+
+                <p class="articles">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque neque earum delectus provident aliquam ex ducimus a amet ipsam atque nemo dignissimos accusamus, iste laborum eum adipisci, autem expedita.
+                    Alias libero, voluptas quam laboriosam sunt dolorem, aliquam omnis aut quidem animi deleniti porro amet veniam voluptatum tempore temporibus officia rem. Quibusdam reiciendis delectus architecto possimus ut blanditiis, vitae laborum. Si vous avez tout lu jusqu'à ici, félicitations vous avez gagné <strong>un IPhone </strong> !
+                </p>
+
+                <p class="articles">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est iste sed modi aliquam aperiam non, placeat, deleniti molestias odio tempore similique perspiciatis ipsa, ratione illum optio dicta corporis ullam repudiandae!
+                </p>
+
+                <button> 📄 J'ADOPTE UN ALIEN </button>
+            </div>
+        </section>
+
+        <section class="dates-offres-plantes">
+            <section class="dates"><!-- Dates -->
+                <div>
+                    <span class="date"> 30 JUILLET </span>
+
+                    <h3> POST À SOUDER </h3>
+
+                    <p class="articles">
+                        L'actualité brûlante du jour. Vous resterez collés à vos sièges.
+                    </p>
+                </div>
+
+                    <hr noshade width=100% size="4" color="#E5E5E5">
+
+                <div>
+                    <span class="date"> 28 JUILLET </span>
+
+                    <h3> POST DE POLICE </h3>
+
+                    <p class="articles">
+                        Hé là ! qui va là ? Veuillez présenter les documents afférents à la consuite de votre véhicule.
+                    </p>
+                </div>
+
+                    <hr noshade width=100% size="4" color="#E5E5E5">
+
+                <div>
+                    <span class="date"> 2 JUILLET </span>
+
+                    <h3> POST APOCALYPTIQUE </h3>
+
+                    <p class="articles">
+                        !Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aliquid qui, minus eum, facilis quas sit debitis magni culpa, iusto rerum?
+                    </p>     
+                </div>
+                
+                <hr noshade width=100% size="4" color="#E5E5E5">
+                <hr noshade width=100% size="4" color="#E5E5E5">
+
+            </section>
+
+            <section class="offres-plantes"><!-- Offres et plantes -->
+                <div>
+                    <h3> OFFRE GEOFITNESS </h3>
+
+                    <picture class="float">
+                        <source media="(max-width: 767px)" srcset="img/globe-larg-100.jpg">
+                        <source media="(max-width: 991px)" srcset="img/globe-larg-120.jpg">
+                        <source media="(min-width: 992px)" srcset="img/globe-larg-120.jpg">
+            
+                        <img src="img/globe.jpg" alt="globe">
+                    </picture>
+
+                    <p>
+                        Incroyable ! Grâce à GeoFitness, j'apprends la géographie tout en faisant de l'exercice ! <br> Seulement 34999,99€! <br> Le 1er acheté, le 2ème à <strong>+500%.</strong> <br> Offre exclusive réservée aux 2 premiers pigeons!
+                    </p>
+
+                    <button class="button-right"> 📄 JE SUIS UN PIGEON ! </button> 
+                </div>
+
+                    <hr noshade width=100% size="4" color="#E5E5E5">
+
+                <div>
+                    <h3> LA PLANTE VAMPIRE </h3>
+
+                    <picture class="float">
+                        <source media="(max-width: 767px)" srcset="img/plante-vampire-larg-100.jpg">
+                        <source media="(max-width: 991px)" srcset="img/plante-vampire-larg-120.jpg">
+                        <source media="(min-width: 992px)" srcset="img/plante-vampire-larg-120.jpg">
+            
+                        <img src="img/plante-vampire.jpg" alt="plante vampire">
+                    </picture>
+
+                    <p>
+                        Incroyable ! Si vous touchez ses feuilles, cette plante vous videra de votre sang en un clin d'oeil. <br> Le cadeau empoisonné idéal!
+                    </p>
+
+                    <button class="button-right"> 📄 MAMAN J'AI PEUR ! </button>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <h2> DES QUESTIONS ? <strong>CONTACTEZ-NOUS:</strong> </h2>
+
+        <!-- Mon Formulaire ici -->
+        <section class="france-info">
+            <form action="service-contact" method="post">
+
+                <div class="france-info-inside-form">
+                    <input class="block-form" type="text" name="username" placeholder="Nom">
+                    <input class="block-form" type="mail" name="Email" placeholder="Email">
+                </div>
+
+                <textarea class="block-form" name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                <button class="button-final">📨 IL VA FAIRE TOUT NOIR !</button>
+            </form>
+
+            <section class="infos"><!-- Les infos -->
+                <p>
+                    Nous vous répondrons exclusivement par pigeon voyageur.
+                </p>
+
+                <ul>
+                    <div class="france-info-inside-notes">
+                        <li><i class="fa-solid fa-house"></i>1234Ch. de la perdition <br> 457R6 Quelque-Part <br> Jupiter</li>
+                        <li><i class="fa-solid fa-phone-volume"></i>(0_O)\0_\0/_0/(T_T)</li>
+                        <li><i class="fa-solid fa-envelope"></i><a href="lien-mel">ne-pas-repondre@fake-news.info</a> </li>
+                    </div>
+
+                    <div>
+                        <li><i class="fa-brands fa-twitter"></i><a href="lien-fk-news">@Fakenews</a> </li>
+                        <li><i class="fa-brands fa-square-instagram"></i><a href="lien-insta">instagram.com/fake-news</a> </li>
+                        <li><i class="fa-solid fa-futbol"></i><a href="lien-dribbble">dribbble.com/fake-news</a> </li>
+                        <li><i class="fa-brands fa-facebook"></i><a href="lien-fb">facebook.com/fake-news</a> </li>
+                    </div>
+
+                </ul>
+            </section>
+        </section>
+
+            <hr noshade width=100% size="4" color="#E5E5E5">
+
+        <section class="end"> <!-- Copyright et mentions légales -->
+            <span>&copy;Fake News. Tous droits réservés.</span>
+            <a href="#">Mentions Illégales</a>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
